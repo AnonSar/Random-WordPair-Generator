@@ -98,6 +98,7 @@ class RandomWordsState extends State<RandomWords> {
 
     final bool alreadySaved = _saved.contains(pair);  // Boolean expression to ensure whether a pair has been saved before or not
 
+    
     return ListTile(
       title: Text(
         pair.asPascalCase,
