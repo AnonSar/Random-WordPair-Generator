@@ -64,7 +64,7 @@ class RandomWordsState extends State<RandomWords> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Name Generator'),
+        title: Text('Random WordPair Generator'),
         actions: <Widget>[      // Adding interactivity to the list tiles
           IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
         ],
@@ -87,7 +87,6 @@ class RandomWordsState extends State<RandomWords> {
           /*2*/
 
           final index = i ~/ 2; /*3*/
-          print(index);
           if (index >= _suggestions.length) {
             _suggestions.addAll(generateWordPairs().take(10)); /*4*/
           }
